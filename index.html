@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 World Cup Pool 🏆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF7F2;--bg2:#F3ECFB;--card:#FFFFFF;--line:#ECE3F2;--line2:#E4DAEC;
+    --ink:#3A3147;--muted:#9A8FA8;--gold:#E8A23D;--goldbg:#FFF6E6;--mint:#4FB89A;
+    --t1:#5B8DEF;--t1bg:#EAF1FE;--t2:#A878E6;--t2bg:#F3ECFD;--t3:#F2864B;--t3bg:#FDEEE4;
+    --radius:16px;--shadow:0 8px 24px rgba(120,90,150,.10);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:
+     radial-gradient(900px 500px at 15% -150px,#FDEAF1 0%,transparent 55%),
+     radial-gradient(900px 500px at 85% -100px,#E7F0FD 0%,transparent 55%),
+     var(--bg)}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.45;padding:0 0 70px}
+  .wrap{max-width:880px;margin:0 auto;padding:0 16px}
+  .num{font-variant-numeric:tabular-nums}
+  .flag{width:24px;height:18px;object-fit:cover;border-radius:3px;border:1px solid rgba(0,0,0,.08);box-shadow:0 1px 2px rgba(0,0,0,.06);vertical-align:middle;flex-shrink:0;background:#eee}
+  .flag.sm{width:20px;height:15px}
+  header{padding:36px 0 6px;text-align:center}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 12px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(36px,9vw,62px);line-height:1;margin:0;letter-spacing:-.01em}
+  h1 .y{color:var(--gold);font-style:italic}
+  .tagline{color:var(--muted);max-width:540px;margin:14px auto 0;font-size:15px}
+  .updated{margin-top:16px;font-size:12px;color:var(--muted);display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(79,184,154,.5);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(79,184,154,.45)}70%{box-shadow:0 0 0 7px rgba(79,184,154,0)}100%{box-shadow:0 0 0 0 rgba(79,184,154,0)}}
+  .tabs{display:flex;gap:6px;justify-content:center;margin:26px 0 4px}
+  .tab{font-family:Inter;font-weight:700;font-size:13px;letter-spacing:.02em;border:1px solid var(--line2);background:var(--card);color:var(--muted);padding:9px 18px;border-radius:999px;cursor:pointer;transition:.15s}
+  .tab:hover{color:var(--ink)}
+  .tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .controls{display:flex;gap:10px;align-items:center;margin:18px 2px 14px;flex-wrap:wrap}
+  .controls h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:23px;margin:0;flex:1}
+  input.search{font-family:Inter;font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line2);border-radius:10px;padding:9px 12px;outline:none;min-width:170px}
+  input.search:focus{border-color:var(--t2)}
+  .legend{display:flex;gap:8px;flex-wrap:wrap;margin:0 2px 16px}
+  .tag{font-size:11px;font-weight:700;padding:5px 11px;border-radius:999px;letter-spacing:.02em}
+  .tag.t1{background:var(--t1bg);color:var(--t1)}
+  .tag.t2{background:var(--t2bg);color:var(--t2)}
+  .tag.t3{background:var(--t3bg);color:var(--t3)}
+  .row{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;box-shadow:var(--shadow)}
+  .row-main{display:grid;grid-template-columns:40px 1fr auto;align-items:center;gap:12px;padding:13px 16px;cursor:pointer}
+  .rank{font-family:Fraunces,serif;font-weight:700;font-size:24px;line-height:1;color:var(--muted);text-align:center}
+  .row.gold{border-color:#F1D79A;background:linear-gradient(180deg,var(--goldbg),var(--card))}
+  .row.gold .rank{color:var(--gold)}
+  .ent{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .ent .team{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px}
+  .ent .who{color:var(--muted);font-size:13px;font-weight:500}
+  .ent .who b{color:var(--ink);font-weight:600}
+  .badge{font-size:10px;font-weight:800;padding:3px 8px;border-radius:7px;letter-spacing:.03em}
+  .badge.t1{background:var(--t1bg);color:var(--t1)}
+  .badge.t2{background:var(--t2bg);color:var(--t2)}
+  .badge.t3{background:var(--t3bg);color:var(--t3)}
+  .total{font-family:Fraunces,serif;font-weight:700;font-size:27px;line-height:1;text-align:right;min-width:52px;color:var(--ink)}
+  .total small{display:block;font-family:Inter;font-weight:700;font-size:9px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-top:2px}
+  .row.gold .total{color:var(--gold)}
+  .chev{color:var(--muted);font-size:12px;transition:.2s}
+  .row.open .chev{transform:rotate(180deg)}
+  .bd{display:none;border-top:1px solid var(--line);background:var(--bg2);padding:12px 16px;font-size:13px}
+  .row.open .bd{display:block}
+  .bd .line{display:flex;justify-content:space-between;padding:4px 0;color:var(--muted)}
+  .bd .line b{color:var(--ink);font-weight:600}
+  .bd .line.tot{border-top:1px solid var(--line2);margin-top:6px;padding-top:8px;color:var(--ink);font-weight:700}
+  .state{text-align:center;color:var(--muted);padding:40px 0;font-size:14px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px;box-shadow:var(--shadow);padding:13px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .pcard .pnum{font-family:Fraunces,serif;font-weight:700;color:var(--muted);min-width:22px}
+  .pcard .pname{font-weight:700;font-size:16px;min-width:110px}
+  .pcard .pteams{display:flex;gap:6px;flex-wrap:wrap;flex:1}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px;border:1px solid var(--line2)}
+  .chip.t1{background:var(--t1bg);color:var(--t1)}
+  .chip.t2{background:var(--t2bg);color:var(--t2)}
+  .chip.t3{background:var(--t3bg);color:var(--t3)}
+  .chip .pts{font-weight:800;opacity:.85}
+  .pcard .psum{font-family:Fraunces,serif;font-weight:700;font-size:18px;color:var(--ink)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-top:14px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 12px;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);font-weight:800}
+  .srow{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+  .srow:first-of-type{border-top:0}
+  .srow b{font-family:Fraunces,serif;font-weight:700;font-size:15px}
+  .note{color:var(--muted);font-size:12.5px;line-height:1.55;margin:8px 0 0}
+  h2.sec{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:23px;margin:34px 0 0}
+  .tiergrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+  @media(max-width:620px){.tiergrid{grid-template-columns:1fr}}
+  .tiercol{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+  .tiercol h4{margin:0 0 8px;font-size:12px;letter-spacing:.03em;font-weight:800}
+  .tiercol.t1 h4{color:var(--t1)}.tiercol.t2 h4{color:var(--t2)}.tiercol.t3 h4{color:var(--t3)}
+  .tiercol .tm{font-size:13px;padding:4px 0;color:var(--ink);opacity:.92;display:flex;align-items:center;gap:8px}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:28px 0 0}
+  footer a{color:var(--t2)}
+  .hidden{display:none}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">RM50 / entry · up to 3 entries · 🇨🇦 🇲🇽 🇺🇸</p>
+    <h1>2026 World Cup <span class="y">Pool</span></h1>
+    <p class="tagline">One team per entry. Higher tier, higher multiplier, higher reward. Points climb every time your team advances.</p>
+    <div class="updated"><span class="dot"></span><span id="updated">Loading…</span></div>
+    <div class="tabs">
+      <button class="tab active" data-view="board">🏆 Leaderboard</button>
+      <button class="tab" data-view="roster">👥 Participants</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section id="view-board">
+    <div class="controls">
+      <h2>Leaderboard <span style="color:var(--muted);font-weight:500;font-size:14px;font-family:Inter">· <span id="entcount">100</span> entries</span></h2>
+      <input class="search" id="search" placeholder="Find your name or team…" autocomplete="off">
+    </div>
+    <div class="legend">
+      <span class="tag t1">Tier 1 · ×1 Titans</span>
+      <span class="tag t2">Tier 2 · ×2 The Field</span>
+      <span class="tag t3">Tier 3 · ×3 Longshots</span>
+    </div>
+    <div id="board"><div class="state">Loading the latest scores…</div></div>
+  </section>
+
+  <section id="view-roster" class="hidden">
+    <div class="controls">
+      <h2>Participants <span style="color:var(--muted);font-weight:500;font-size:14px;font-family:Inter">· <span id="pcount">38</span> people</span></h2>
+      <input class="search" id="search2" placeholder="Find a name…" autocomplete="off">
+    </div>
+    <div id="roster"><div class="state">Loading…</div></div>
+  </section>
+
+  <h2 class="sec">How scoring works</h2>
+  <div class="card">
+    <h3>📈 Advancement points <span style="color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0">× your tier multiplier</span></h3>
+    <div class="srow"><span>Advance from group stage</span><b>5</b></div>
+    <div class="srow"><span>Round of 32 win</span><b>5</b></div>
+    <div class="srow"><span>Round of 16 win</span><b>10</b></div>
+    <div class="srow"><span>Quarter-final win</span><b>10</b></div>
+    <div class="srow"><span>Semi-final win</span><b>15</b></div>
+    <div class="srow"><span>Final win</span><b>20</b></div>
+    <p class="note">Cumulative base = 65. A Tier 3 champion maxes at 65 × 3 = <b style="color:var(--t3)">195</b>.</p>
+  </div>
+  <div class="card">
+    <h3>🔥 Bonuses <span style="color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0">flat — not multiplied</span></h3>
+    <div class="srow"><span>🥇 Wins the group (finishes 1st)</span><b>+2</b></div>
+    <div class="srow"><span>👹 Giant Slayer — Tier 3 advances past a Tier 1 team</span><b>+10</b></div>
+  </div>
+
+  <h2 class="sec">The tiers</h2>
+  <div class="tiergrid" id="tiers"></div>
+
+  <footer>Auto-updated via GitHub Actions · results from <a href="https://github.com/openfootball/worldcup.json">openfootball</a></footer>
+</div>
+
+<script>
+var DATA=null, TEAM={};
+var MULT={1:'×1',2:'×2',3:'×3'};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];});}
+function flagImg(t,cls){return '<img class="flag '+(cls||'')+'" loading="lazy" alt="" src="https://flagcdn.com/'+t.iso+'.svg">';}
+function timeAgo(iso){var d=new Date(iso),m=Math.round((Date.now()-d)/60000);if(m<1)return'just now';if(m<60)return m+' min ago';var h=Math.round(m/60);if(h<24)return h+' hr ago';return d.toLocaleDateString(undefined,{day:'numeric',month:'short'});}
+
+function renderBoard(){
+  var q=(document.getElementById('search').value||'').toLowerCase().trim();
+  var list=DATA.entries.filter(function(e){var t=TEAM[e.teamId];return !q||e.participant.toLowerCase().indexOf(q)>=0||t.name.toLowerCase().indexOf(q)>=0;});
+  var board=document.getElementById('board');
+  if(!list.length){board.innerHTML='<div class="state">No entries match that search.</div>';return;}
+  board.innerHTML=list.map(function(e){
+    var t=TEAM[e.teamId];var gold=e.rank===1&&e.total>0;var advBase=t.tier?t.base/t.tier:t.base;
+    var formula=t.base>0?(advBase+' adv × '+t.tier):'0 adv';
+    return '<div class="row '+(gold?'gold':'')+'">'+
+      '<div class="row-main">'+
+        '<div class="rank num">'+e.rank+'</div>'+
+        '<div class="ent">'+
+          '<span class="team">'+flagImg(t)+' '+esc(t.name)+'</span>'+
+          '<span class="badge t'+t.tier+'">T'+t.tier+' '+MULT[t.tier]+'</span>'+
+          '<span class="who">— <b>'+esc(e.participant)+'</b></span>'+
+        '</div>'+
+        '<div style="display:flex;align-items:center;gap:6px">'+
+          '<div class="total num">'+e.total+'<small>pts</small></div>'+
+          '<span class="chev">▾</span>'+
+        '</div>'+
+      '</div>'+
+      '<div class="bd">'+
+        '<div class="line"><span>Furthest stage</span><b>'+t.stageLabel+'</b></div>'+
+        '<div class="line"><span>Advancement points ('+formula+')</span><b>'+t.base+'</b></div>'+
+        (t.gw?'<div class="line"><span>🥇 Group winner</span><b>+'+t.gw+'</b></div>':'')+
+        (t.gs?'<div class="line"><span>👹 Giant Slayer ×'+t.giant+'</span><b>+'+t.gs+'</b></div>':'')+
+        '<div class="line tot"><span>Total</span><b>'+e.total+'</b></div>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+}
+
+function renderRoster(){
+  var q=(document.getElementById('search2').value||'').toLowerCase().trim();
+  var list=DATA.roster.filter(function(p){return !q||p.participant.toLowerCase().indexOf(q)>=0;});
+  var el=document.getElementById('roster');
+  if(!list.length){el.innerHTML='<div class="state">No one matches that search.</div>';return;}
+  el.innerHTML=list.map(function(p){
+    var idx=DATA.roster.indexOf(p)+1;
+    var chips=p.teamIds.map(function(id){var t=TEAM[id];
+      return '<span class="chip t'+t.tier+'">'+flagImg(t,'sm')+' '+esc(t.name)+' <span class="pts">'+t.total+'</span></span>';
+    }).join('');
+    return '<div class="pcard">'+
+      '<span class="pnum num">'+idx+'</span>'+
+      '<span class="pname">'+esc(p.participant)+'</span>'+
+      '<span class="pteams">'+chips+'</span>'+
+      '<span class="psum">'+p.sum+'<span style="font-size:11px;color:var(--muted);font-weight:600"> pts</span></span>'+
+    '</div>';
+  }).join('');
+}
+
+function renderTiers(){
+  var names={1:'Tier 1 · Titans ×1',2:'Tier 2 · The Field ×2',3:'Tier 3 · Longshots ×3'};
+  var html=[1,2,3].map(function(tier){
+    var rows=DATA.teams.filter(function(t){return t.tier===tier;}).sort(function(a,b){return a.name.localeCompare(b.name);})
+      .map(function(t){return '<div class="tm">'+flagImg(t,'sm')+' '+esc(t.name)+'</div>';}).join('');
+    return '<div class="tiercol t'+tier+'"><h4>'+names[tier]+'</h4>'+rows+'</div>';
+  }).join('');
+  document.getElementById('tiers').innerHTML=html;
+}
+
+async function load(){
+  try{
+    var r=await fetch('data/standings.json?'+Date.now());
+    if(!r.ok) throw new Error(r.status);
+    DATA=await r.json();
+  }catch(e){
+    document.getElementById('board').innerHTML='<div class="state">Couldn’t load the latest standings yet. If you just published, give the first update job a minute to run.</div>';
+    document.getElementById('updated').textContent='';
+    return;
+  }
+  TEAM=Object.fromEntries(DATA.teams.map(function(t){return [t.id,t];}));
+  document.getElementById('entcount').textContent=DATA.entries.length;
+  document.getElementById('pcount').textContent=DATA.roster.length;
+  document.getElementById('updated').textContent='Updated '+timeAgo(DATA.updatedAt);
+  renderTiers(); renderBoard(); renderRoster();
+}
+
+document.querySelectorAll('.tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+    tab.classList.add('active');
+    var v=tab.getAttribute('data-view');
+    document.getElementById('view-board').classList.toggle('hidden',v!=='board');
+    document.getElementById('view-roster').classList.toggle('hidden',v!=='roster');
+  });
+});
+document.getElementById('board').addEventListener('click',function(ev){var rm=ev.target.closest('.row-main');if(rm&&rm.parentElement)rm.parentElement.classList.toggle('open');});
+document.getElementById('search').addEventListener('input',function(){if(DATA)renderBoard();});
+document.getElementById('search2').addEventListener('input',function(){if(DATA)renderRoster();});
+load();
+</script>
+</body>
+</html>
