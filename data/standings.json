@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T20:22:18.678Z",
+  "updatedAt": "2026-06-27T08:10:38.410Z",
   "source": "openfootball/worldcup.json (2026)",
   "scoring": {
     "advance": {
@@ -390,10 +390,10 @@
       "stage": "group",
       "stageLabel": "Group stage",
       "base": 0,
-      "gw": 2,
+      "gw": 0,
       "gs": 0,
       "giant": 0,
-      "total": 2
+      "total": 0
     },
     {
       "id": "iran",
@@ -420,10 +420,10 @@
       "stage": "group",
       "stageLabel": "Group stage",
       "base": 0,
-      "gw": 0,
+      "gw": 2,
       "gs": 0,
       "giant": 0,
-      "total": 0
+      "total": 2
     },
     {
       "id": "new-zealand",
