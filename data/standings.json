@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T10:33:46.446Z",
+  "updatedAt": "2026-07-07T19:16:00.888Z",
   "source": "openfootball/worldcup.json (2026)",
   "scoring": {
     "advance": {
@@ -417,13 +417,13 @@
       "flag": "🇧🇪",
       "group": "G",
       "tier": 1,
-      "stage": "r16",
-      "stageLabel": "Round of 16",
-      "base": 10,
+      "stage": "qf",
+      "stageLabel": "Quarter-final",
+      "base": 20,
       "gw": 2,
       "gs": 0,
       "giant": 0,
-      "total": 12
+      "total": 22
     },
     {
       "id": "new-zealand",
@@ -447,13 +447,13 @@
       "flag": "🇪🇸",
       "group": "H",
       "tier": 1,
-      "stage": "r16",
-      "stageLabel": "Round of 16",
-      "base": 10,
+      "stage": "qf",
+      "stageLabel": "Quarter-final",
+      "base": 20,
       "gw": 2,
       "gs": 0,
       "giant": 0,
-      "total": 12
+      "total": 22
     },
     {
       "id": "uruguay",
@@ -904,6 +904,111 @@
       "rank": 5
     },
     {
+      "id": "kumaran-1",
+      "participant": "Kumaran",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "vimala-3",
+      "participant": "Vimala",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "erme-1",
+      "participant": "Erme",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "nicole-1",
+      "participant": "Nicole",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "tye-1",
+      "participant": "Tye",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "ch-1",
+      "participant": "CH",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "alex-1",
+      "participant": "Alex",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "vimal-2",
+      "participant": "Vimal",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "phei-1",
+      "participant": "Phei",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "jas-1",
+      "participant": "Jas",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "ckm-1",
+      "participant": "CKM",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "kenex-1",
+      "participant": "Kenex",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "vc-2",
+      "participant": "VC",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "wy-2",
+      "participant": "WY",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
+      "id": "bar-2",
+      "participant": "BAR",
+      "teamId": "spain",
+      "total": 22,
+      "rank": 5
+    },
+    {
       "id": "ryan-3",
       "participant": "Ryan",
       "teamId": "switzerland",
@@ -950,224 +1055,119 @@
       "participant": "Erme",
       "teamId": "paraguay",
       "total": 20,
-      "rank": 30
+      "rank": 45
     },
     {
       "id": "shanice-1",
       "participant": "Shanice",
       "teamId": "ghana",
       "total": 15,
-      "rank": 31
+      "rank": 46
     },
     {
       "id": "darryl-3",
       "participant": "Darryl",
       "teamId": "ghana",
       "total": 15,
-      "rank": 31
+      "rank": 46
     },
     {
       "id": "bev-3",
       "participant": "Bev",
       "teamId": "south-africa",
       "total": 15,
-      "rank": 31
+      "rank": 46
     },
     {
       "id": "wanfen-1",
       "participant": "Wan Fen",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "vimala-1",
       "participant": "Vimala",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "aman-1",
       "participant": "Aman",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "lks-2",
       "participant": "LKS",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "zl-1",
       "participant": "ZL",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "tsc-2",
       "participant": "TSC",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "bar-3",
       "participant": "BAR",
       "teamId": "argentina",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "joann-1",
       "participant": "Jo-Ann",
       "teamId": "brazil",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "pl-1",
       "participant": "PL",
       "teamId": "brazil",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "nicole-3",
       "participant": "Nicole",
       "teamId": "brazil",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "aar-3",
       "participant": "AAR",
       "teamId": "brazil",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "fr-1",
       "participant": "FR",
       "teamId": "brazil",
       "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "pl-2",
       "participant": "PL",
       "teamId": "colombia",
       "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "kumaran-1",
-      "participant": "Kumaran",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "vimala-3",
-      "participant": "Vimala",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "erme-1",
-      "participant": "Erme",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "nicole-1",
-      "participant": "Nicole",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "tye-1",
-      "participant": "Tye",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "ch-1",
-      "participant": "CH",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "alex-1",
-      "participant": "Alex",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "vimal-2",
-      "participant": "Vimal",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "phei-1",
-      "participant": "Phei",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "jas-1",
-      "participant": "Jas",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "ckm-1",
-      "participant": "CKM",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "kenex-1",
-      "participant": "Kenex",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "vc-2",
-      "participant": "VC",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "wy-2",
-      "participant": "WY",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
-    },
-    {
-      "id": "bar-2",
-      "participant": "BAR",
-      "teamId": "spain",
-      "total": 12,
-      "rank": 34
+      "rank": 49
     },
     {
       "id": "aman-2",
@@ -1459,7 +1459,7 @@
         "spain",
         "portugal"
       ],
-      "sum": 22
+      "sum": 32
     },
     {
       "participant": "Vimala",
@@ -1468,7 +1468,7 @@
         "germany",
         "spain"
       ],
-      "sum": 31
+      "sum": 41
     },
     {
       "participant": "Jo-Ann",
@@ -1511,7 +1511,7 @@
         "spain",
         "paraguay"
       ],
-      "sum": 32
+      "sum": 42
     },
     {
       "participant": "David",
@@ -1538,7 +1538,7 @@
         "norway",
         "brazil"
       ],
-      "sum": 64
+      "sum": 74
     },
     {
       "participant": "Tye",
@@ -1547,7 +1547,7 @@
         "portugal",
         "senegal"
       ],
-      "sum": 32
+      "sum": 42
     },
     {
       "participant": "LKS",
@@ -1565,7 +1565,7 @@
         "france",
         "uruguay"
       ],
-      "sum": 34
+      "sum": 44
     },
     {
       "participant": "Eugene",
@@ -1581,7 +1581,7 @@
         "spain",
         "germany"
       ],
-      "sum": 19
+      "sum": 29
     },
     {
       "participant": "Shanice",
@@ -1625,7 +1625,7 @@
         "spain",
         "portugal"
       ],
-      "sum": 44
+      "sum": 54
     },
     {
       "participant": "ZL",
@@ -1665,7 +1665,7 @@
         "spain",
         "portugal"
       ],
-      "sum": 22
+      "sum": 32
     },
     {
       "participant": "Jas",
@@ -1674,7 +1674,7 @@
         "norway",
         "japan"
       ],
-      "sum": 62
+      "sum": 72
     },
     {
       "participant": "AAR",
@@ -1701,7 +1701,7 @@
         "mexico",
         "japan"
       ],
-      "sum": 44
+      "sum": 54
     },
     {
       "participant": "Kenex",
@@ -1710,7 +1710,7 @@
         "england",
         "france"
       ],
-      "sum": 56
+      "sum": 66
     },
     {
       "participant": "WE",
@@ -1727,7 +1727,7 @@
         "spain",
         "portugal"
       ],
-      "sum": 44
+      "sum": 54
     },
     {
       "participant": "FR",
@@ -1744,7 +1744,7 @@
         "spain",
         "england"
       ],
-      "sum": 56
+      "sum": 66
     },
     {
       "participant": "BAR",
@@ -1753,7 +1753,7 @@
         "spain",
         "argentina"
       ],
-      "sum": 31
+      "sum": 41
     },
     {
       "participant": "EY",
